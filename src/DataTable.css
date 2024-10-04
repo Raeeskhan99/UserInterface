@@ -1,0 +1,194 @@
+/* src/DataTable.css */
+
+.datatable-container {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.add-user-button {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-user-button:hover {
+  background-color: #45a049;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.clear-button {
+  margin-left: 10px;
+  background-color: #f44336; /* Red */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.clear-button:hover {
+  background-color: #d32f2f;
+}
+
+.download-button {
+  margin-left: 10px;
+  background-color: #2196F3; /* Blue */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.download-button:hover {
+  background-color: #1976D2;
+}
+
+.datatable {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* Ensures that columns have equal width */
+}
+
+.datatable th,
+.datatable td {
+  border: 1px solid #ddd;
+  padding: 12px 8px;
+  text-align: left;
+  word-wrap: break-word; /* Prevents content from overflowing */
+}
+
+.datatable th {
+  background-color: #f2f2f2;
+  position: sticky; /* Keeps headers visible on scroll */
+  top: 0;
+  z-index: 1;
+  font-weight: bold;
+}
+
+.datatable tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.datatable tr:hover {
+  background-color: #f1f1f1;
+}
+
+.error {
+  color: red;
+  font-size: 0.8em;
+}
+
+.user-form {
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.user-form div {
+  margin-bottom: 15px;
+}
+
+.user-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.user-form input,
+.user-form select {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.user-form button {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.user-form button:hover {
+  background-color: #45a049;
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 8px 12px;
+  border: none;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.pagination button:hover {
+  background-color: #ddd;
+}
+
+.pagination button.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.pagination button:disabled {
+  background-color: #eaeaea;
+  cursor: not-allowed;
+}
+
+.edit-button {
+  background-color: #ff9800; /* Orange */
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.edit-button:hover {
+  background-color: #e68900;
+}
+
+.delete-button {
+  background-color: #f44336; /* Red */
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #da190b;
+}
